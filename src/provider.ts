@@ -126,7 +126,7 @@ export class ProviderManager implements CompletionItemProvider {
     let noneWords = before_content.endsWith(' ') ? '' : before_content.match(/\W*$/)[0]
     let contextPrefixes: string[] = []
     const configuration = workspace.getConfiguration('snippets')
-    const execContext = configuration.get<boolean>('execContext', false)
+    const execContext = configuration.get<boolean>('execContext', true)
     for (let snip of snippets) {
       if (!execContext && snip.context) continue
       if (snip.prefix === '') continue

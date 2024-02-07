@@ -115,7 +115,7 @@
         },
         "snippets.execContext": {
           "type": "boolean",
-          "default": false,
+          "default": true,
           "description": "Execute a snippet's context (if it exists) to check if the snippet should be shown in completion menu"
         },
         "snippets.ultisnips.enable": {
